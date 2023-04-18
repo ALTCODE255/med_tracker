@@ -1,3 +1,5 @@
+med_log.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +129,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+med_log.db

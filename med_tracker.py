@@ -37,7 +37,7 @@ def getLastDose(db: str) -> datetime:
 	last_dose = [" - ".join(result) for result in cursor.fetchall()]
 	cursor.close()
 	sqliteConnection.close()
-	dt_last_dose = datetime.strptime(last_dose[0], "%m/%d/%Y - %I:%M%p")
+	dt_last_dose = datetime.strptime(last_dose[0], "%m/%d/%Y - %I:%M%p") if len(last_dose) > 0 else datetime.now()
 	return dt_last_dose
 
 
